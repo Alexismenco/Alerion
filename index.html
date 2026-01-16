@@ -1,291 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Alerion | Infraestructura Inteligente para Escalar Negocios</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="description" content="Alerion diseña e implementa infraestructura de automatización para empresas que quieren escalar con control, eficiencia y sin fricción operativa.">
-
-  <style>
-    :root {
-      --black: #050505;
-      --gold: #c9a24d;
-      --blue: #0b1f2a;
-      --white: #f5f5f4;
-      --gray: #9ca3af;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', system-ui, sans-serif;
-    }
-
-    body {
-      background: var(--black);
-      color: var(--white);
-      line-height: 1.7;
-    }
-
-    section {
-      padding: 100px 20px;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    h1, h2, h3 {
-      font-weight: 600;
-      letter-spacing: -0.5px;
-    }
-
-    h1 {
-      font-size: 3.4rem;
-      margin-bottom: 30px;
-    }
-
-    h2 {
-      font-size: 2.6rem;
-      margin-bottom: 50px;
-      text-align: center;
-    }
-
-    p {
-      color: var(--gray);
-      font-size: 1.1rem;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 16px 38px;
-      border-radius: 10px;
-      background: var(--gold);
-      color: var(--black);
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      opacity: 0.85;
-    }
-
-    /* HERO */
-    .hero {
-      background: linear-gradient(135deg, #050505, #0b1f2a);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 60px;
-      align-items: center;
-    }
-
-    .hero img {
-      width: 100%;
-      border-radius: 20px;
-      opacity: 0.9;
-    }
-
-    /* BLOQUES */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 40px;
-      margin-top: 60px;
-    }
-
-    .box {
-      background: #0b0b0b;
-      padding: 40px;
-      border-radius: 18px;
-      border: 1px solid #1f2933;
-    }
-
-    .box h3 {
-      margin-bottom: 20px;
-      color: var(--white);
-    }
-
-    /* PAQUETES */
-    .package {
-      border: 1px solid #1f2933;
-      padding: 50px 40px;
-      border-radius: 20px;
-      background: linear-gradient(180deg, #050505, #0a0a0a);
-    }
-
-    ul {
-      margin-top: 25px;
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 12px;
-      color: var(--gray);
-    }
-
-    /* CTA */
-    .cta {
-      background: linear-gradient(135deg, #0b1f2a, #050505);
-      text-align: center;
-    }
-
-    footer {
-      text-align: center;
-      padding: 40px;
-      font-size: 0.9rem;
-      color: #6b7280;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALERION | Systems Architecture</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Manrope', sans-serif; background-color: #0F0F12; color: #F4F4F5; }
+        .tracking-widest-custom { letter-spacing: 0.3em; }
+        .glass-effect { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); }
+        ::selection { background-color: #F4F4F5; color: #0F0F12; }
+    </style>
 </head>
+<body class="antialiased">
 
-<body>
+    <nav class="fixed w-full z-50 top-0 left-0 py-8 px-12 flex justify-between items-center mix-blend-difference">
+        <div class="text-xl font-bold tracking-widest-custom uppercase">ALERION</div>
+        <a href="#" class="text-[10px] uppercase tracking-[0.2em] border border-white/20 px-8 py-3 hover:bg-white hover:text-black transition-all duration-500">
+            Terminal Clientes
+        </a>
+    </nav>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <h1>
-        La infraestructura invisible<br>
-        detrás de los negocios que escalan
-      </h1>
-
-      <p>
-        Alerion diseña e implementa sistemas de automatización estructural
-        para empresas que ya venden y necesitan orden, control y eficiencia
-        antes de crecer.
-      </p>
-
-      <br><br>
-
-      <a href="https://wa.me/56976563238" target="_blank" class="btn">
-        Hablar con Alerion
-      </a>
-    </div>
-
-    <div>
-      <img src="img.jpg"  alt="Infraestructura digital empresarial">
-    </div>
-  </div>
-</section>
-
-<!-- PROBLEMA REAL -->
-<section>
-  <div class="container">
-    <h2>El verdadero cuello de botella no es el marketing</h2>
-
-    <div class="grid">
-      <div class="box">
-        <h3>Desorden operativo</h3>
-        <p>
-          Leads, correos y procesos dispersos que dependen de personas,
-          no de sistemas.
+    <section class="relative h-screen flex flex-col justify-center items-center text-center px-4">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#0F0F12] via-[#16161a] to-[#0F0F12] opacity-60 -z-10"></div>
+        
+        <p class="text-[10px] text-gray-500 uppercase tracking-[0.5em] mb-8">Infrastructure & Governance</p>
+        <h1 class="text-6xl md:text-8xl font-light uppercase tracking-tight leading-[1.1] mb-10">
+            El orden escala.<br>
+            <span class="text-gray-600">El caos colapsa.</span>
+        </h1>
+        <p class="max-w-2xl text-gray-400 text-sm md:text-base leading-relaxed mb-12 font-light tracking-wide">
+            Implementamos la arquitectura de sistemas necesaria para empresas B2B en fase de expansión. 
+            Sustituimos la incertidumbre operativa por protocolos de capitalización predecibles.
         </p>
-      </div>
+        <a href="/auditoria.html" class="bg-white text-black px-12 py-5 uppercase text-[10px] tracking-[0.3em] font-bold hover:bg-gray-200 transition-all duration-500">
+            Solicitar Auditoría de Sistemas
+        </a>
+    </section>
 
-      <div class="box">
-        <h3>Crecimiento frágil</h3>
-        <p>
-          Cada nuevo cliente añade complejidad en lugar de eficiencia.
-        </p>
-      </div>
+    <section class="py-32 px-8 md:px-24 border-t border-white/5 bg-[#0D0D10]">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+            <div>
+                <span class="text-[10px] text-gray-600 uppercase tracking-[0.3em] block mb-6">El Diagnóstico</span>
+                <h2 class="text-4xl md:text-5xl uppercase font-light mb-8 leading-tight tracking-tight">
+                    El crecimiento sin estructura <br>es solo ruido.
+                </h2>
+                <p class="text-gray-400 leading-relaxed font-light text-lg italic">
+                    "La mayoría de las organizaciones no fallan por falta de mercado, sino por la incapacidad de procesar el interés que generan."
+                </p>
+                <div class="mt-8 space-y-4">
+                    <p class="text-sm text-gray-500 border-l border-white/10 pl-6">
+                        Si su flujo de ventas depende de la memoria individual, su negocio tiene un límite biológico.
+                    </p>
+                    <p class="text-sm text-gray-500 border-l border-white/10 pl-6">
+                        ALERION elimina el factor humano del seguimiento para asegurar la integridad del pipeline.
+                    </p>
+                </div>
+            </div>
+            <div class="relative h-[500px] w-full bg-[#0F0F12] border border-white/5 overflow-hidden group">
+                <video autoplay loop muted playsinline loading="lazy" class="absolute inset-0 w-full h-full object-cover grayscale opacity-40 group-hover:opacity-60 transition-opacity duration-1000">
+                    <source src="/Alerion.mp4" type="video/mp4">
+                </video>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0F0F12] to-transparent"></div>
+            </div>
+        </div>
+    </section>
 
-      <div class="box">
-        <h3>Herramientas sin arquitectura</h3>
-        <p>
-          Software aislado que no conversa entre sí ni sigue una lógica
-          de negocio.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+    <section class="py-32 px-8 md:px-24 bg-[#0a0a0c]">
+        <div class="mb-20">
+            <h3 class="text-[10px] text-gray-600 uppercase tracking-[0.4em] mb-4">La Solución</h3>
+            <h2 class="text-3xl uppercase font-light tracking-widest">Arquitectura de Flujo</h2>
+        </div>
 
-<!-- SOLUCIÓN -->
-<section>
-  <div class="container">
-    <h2>Alerion no ejecuta marketing.<br>Construye el sistema que lo soporta.</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/5 border border-white/5">
+            <div class="bg-[#0F0F12] p-12 hover:bg-[#141418] transition-all duration-700">
+                <span class="text-[10px] text-gray-600 mb-10 block tracking-widest">SISTEMA 01</span>
+                <h4 class="text-xl uppercase tracking-[0.15em] mb-6">Filtrado</h4>
+                <p class="text-sm text-gray-500 leading-relaxed font-light">
+                    Sincronización de activos para la cualificación automática de prospectos. Eliminamos la fricción manual antes de la intervención humana.
+                </p>
+            </div>
+            <div class="bg-[#0F0F12] p-12 hover:bg-[#141418] transition-all duration-700">
+                <span class="text-[10px] text-gray-600 mb-10 block tracking-widest">SISTEMA 02</span>
+                <h4 class="text-xl uppercase tracking-[0.15em] mb-6">Persistencia</h4>
+                <p class="text-sm text-gray-500 leading-relaxed font-light">
+                    Protocolos de contacto asíncronos que operan bajo precisión matemática. La insistencia del sistema es infalible y constante.
+                </p>
+            </div>
+            <div class="bg-[#0F0F12] p-12 hover:bg-[#141418] transition-all duration-700">
+                <span class="text-[10px] text-gray-600 mb-10 block tracking-widest">SISTEMA 03</span>
+                <h4 class="text-xl uppercase tracking-[0.15em] mb-6">Gobernanza</h4>
+                <p class="text-sm text-gray-500 leading-relaxed font-light">
+                    Visibilidad absoluta sobre el origen y destino de cada unidad de capital. Transformamos el caos en un flujo predecible.
+                </p>
+            </div>
+        </div>
+    </section>
 
-    <p style="max-width:900px;margin:0 auto;text-align:center;">
-      Implementamos la infraestructura que permite capturar, organizar,
-      nutrir y optimizar flujos de información y clientes sin fricción.
-      El marketing funciona cuando el sistema está listo.
-    </p>
-  </div>
-</section>
-
-<!-- PAQUETES -->
-<section>
-  <div class="container">
-    <h2>Infraestructura Alerion</h2>
-
-    <div class="grid">
-
-      <div class="package">
-        <h3>Base Operativa</h3>
-        <p>Fundación estructural del negocio.</p>
-        <ul>
-          <li>Arquitectura de captación</li>
-          <li>Base de datos centralizada</li>
-          <li>Estados y lógica operativa</li>
-        </ul>
-      </div>
-
-      <div class="package">
-        <h3>Automatización Estratégica</h3>
-        <p>Procesos que trabajan sin intervención.</p>
-        <ul>
-          <li>Flujos automáticos</li>
-          <li>Nutrición informativa</li>
-          <li>Optimización del recorrido</li>
-        </ul>
-      </div>
-
-      <div class="package">
-        <h3>Infraestructura de Escalado</h3>
-        <p>Sistema listo para crecimiento.</p>
-        <ul>
-          <li>Segmentación avanzada</li>
-          <li>Automatización comercial</li>
-          <li>Optimización continua</li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- CTA FINAL -->
-<section class="cta">
-  <div class="container">
-    <h2>
-      Las empresas que ganan<br>
-      no improvisan su infraestructura
-    </h2>
-
-    <p style="max-width:700px;margin:30px auto;">
-      Si tu negocio ya genera oportunidades,
-      Alerion construye el sistema que las convierte
-      en crecimiento sostenible.
-    </p>
-
-    <a href="https://wa.me/56976563238"  target="_blank" class="btn">
-      Agendar conversación
-    </a>
-  </div>
-</section>
-
-<footer>
-  © 2026 Alerion · Infraestructura Inteligente para Negocios
-</footer>
+    <footer class="py-32 px-8 text-center bg-[#0a0a0c] border-t border-white/5">
+        <h2 class="text-3xl md:text-5xl uppercase tracking-[0.2em] mb-16 font-light text-gray-400">¿Preparado para el orden?</h2>
+        <a href="#" class="inline-block border border-white/30 text-white px-16 py-6 uppercase text-[10px] tracking-[0.4em] hover:bg-white hover:text-black transition-all duration-700">
+            Iniciar Protocolo de Auditoría
+        </a>
+        
+        <div class="mt-32 flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-700 uppercase tracking-[0.3em] pt-12 border-t border-white/5">
+            <p>contacto@alerion.com</p>
+            <p class="mt-6 md:mt-0">ALERION Systems Architecture © 2026</p>
+        </div>
+    </footer>
 
 </body>
 </html>
