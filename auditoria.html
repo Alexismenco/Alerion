@@ -98,7 +98,7 @@
 
             try {
                 // AQUÍ PEGARÁS TU WEBHOOK DE n8n
-                const response = await fetch('https://n8n.zeuspro.fun/webhook/auditoria', {
+                const response = await fetch('https://n8n.tonpulse.fun/webhook/auditoria', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(data)
@@ -106,7 +106,7 @@
 
                 if (response.ok) {
                     // Redirigir a la página de agendamiento (Calendly)
-                    window.location.href = 'TU_URL_DE_CALENDLY';
+                    window.location.href = 'agenda.alerion.pro';
                 } else {
                     alert('Error en el protocolo. Intente de nuevo.');
                     btn.style.display = 'block';
